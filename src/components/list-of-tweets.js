@@ -3,8 +3,8 @@ import Tweet from './tweet/tweet';
 import classes from './list-of-tweets.module.css';
 
 function getWindowSize() {
-  const { innerWidth, innerHeight } = window;
-  return { innerWidth, innerHeight };
+  const { innerWidth } = window;
+  return { innerWidth };
 }
 
 function ListOfTweets(props) {
