@@ -1,3 +1,4 @@
+import React from 'react';
 import classes from './profile-image.module.css';
 
 function ProfileImage({ image }) {

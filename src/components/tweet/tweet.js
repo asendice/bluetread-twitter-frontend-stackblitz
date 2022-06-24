@@ -1,5 +1,5 @@
+import React from 'react';
 import classes from './tweet.module.css';
-
 import ProfileImage from './profile-image';
 
 function Tweet(props) {
