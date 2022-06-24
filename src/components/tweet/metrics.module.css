@@ -1,0 +1,48 @@
+.metrics {
+  height: 3rem;
+  width: 90%;
+  color: #777;
+  display: flex;
+  margin-top: auto;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.7rem;
+}
+
+.metrics div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: all 0.2s ease;
+}
+
+.iconContainer {
+  padding: 0.7rem;
+  border-radius: 100%;
+  transition: all 0.2s ease;
+}
+
+.comment:hover {
+  color: rgba(29, 161, 242, 1);
+}
+.comment:hover .iconComment {
+  background-color: rgba(29, 161, 242, 0.1);
+}
+.retweet:hover {
+  color: rgba(12, 179, 68, 1);
+}
+.retweet:hover .iconRetweet {
+  background-color: rgba(12, 179, 68, 0.1);
+}
+.heart:hover {
+  color: rgba(242, 29, 50, 1);
+}
+.heart:hover .iconHeart {
+  background-color: rgba(242, 29, 50, 0.1);
+}
+.share:hover {
+  color: #1da1f2;
+}
+.share:hover .iconShare {
+  background-color: rgba(29, 161, 242, 0.1);
+}

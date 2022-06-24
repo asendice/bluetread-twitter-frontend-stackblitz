@@ -3,6 +3,7 @@ import classes from './tweet.module.css';
 import ProfileImage from './profile-image';
 import Names from './names';
 import Text from './text';
+import Metrics from './metrics';
 
 function Tweet(props) {
   const { info } = props;
@@ -19,6 +20,11 @@ function Tweet(props) {
           time={info.created_at}
         />
         <Text text={info.text} />
+        <Metrics
+          comments={reply_count}
+          likes={like_count}
+          retweets={retweet_count}
+        />
       </div>
     </div>
   );
