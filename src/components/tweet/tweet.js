@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './tweet.module.css';
 import ProfileImage from './profile-image';
+import Names from './names';
 
 function Tweet(props) {
   const { info } = props;
@@ -10,7 +11,13 @@ function Tweet(props) {
       <div className={classes.imgContainer}>
         <ProfileImage image={info.profileImage} />
       </div>
-      <div className={classes.content}></div>
+      <div className={classes.content}>
+        <Names
+          name={info.name}
+          userName={info.userName}
+          time={info.created_at}
+        />
+      </div>
     </div>
   );
 }
