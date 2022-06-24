@@ -1,0 +1,25 @@
+.container {
+  border-bottom: solid 1px #777;
+  padding: 1.5rem 2rem;
+  min-height: 15rem;
+  display: flex;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 1);
+  transition: all 0.2s ease;
+}
+
+.container:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.imgContainer {
+  height: 100%;
+  width: 5rem;
+}
+
+.content {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
