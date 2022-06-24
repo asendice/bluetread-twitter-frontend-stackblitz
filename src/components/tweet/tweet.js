@@ -7,7 +7,7 @@ import Metrics from './metrics';
 import Media from './media';
 
 function Tweet(props) {
-  const { info } = props;
+  const { info, windowSize } = props;
   const { like_count, reply_count, retweet_count } = props.info.public_metrics;
   return (
     <div className={classes.container}>
@@ -19,6 +19,7 @@ function Tweet(props) {
           name={info.name}
           userName={info.userName}
           time={info.created_at}
+          windowSize={windowSize}
         />
         <Text text={info.text} />
         {info.media && <Media url={info.media.url} />}
