@@ -4,6 +4,7 @@ import ProfileImage from './profile-image';
 import Names from './names';
 import Text from './text';
 import Metrics from './metrics';
+import Media from './media';
 
 function Tweet(props) {
   const { info } = props;
@@ -20,6 +21,7 @@ function Tweet(props) {
           time={info.created_at}
         />
         <Text text={info.text} />
+        {info.media && <Media url={info.media.url} />}
         <Metrics
           comments={reply_count}
           likes={like_count}
