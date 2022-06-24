@@ -1,3 +1,18 @@
-# react-gtxkst
+# bluetread-twitter-frontend-stackblitz
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-gtxkst)
+## Installation
+
+```
+# clone this repository
+$ git clone https://github.com/asendice/bluetread-twitter-frontend-stackblitz.git
+
+# Go into repository
+$ cd bluetread-twitter-frontend-stackblitz
+
+# Install frontend dependices
+$ npm install
+
+# Run server
+$ npm start
+
+```
