@@ -6,8 +6,6 @@ import ListOfTweets from './components/list-of-tweets';
 export default function App() {
   const [tweets, setTweets] = useState([]);
 
-  console.log(tweets);
-
   useEffect(() => {
     getTweets().then((response) => {
       setTweets(response.data.results);
