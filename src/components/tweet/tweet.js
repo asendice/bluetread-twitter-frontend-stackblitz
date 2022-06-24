@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './tweet.module.css';
 import ProfileImage from './profile-image';
 import Names from './names';
+import Text from './text';
 
 function Tweet(props) {
   const { info } = props;
@@ -17,6 +18,7 @@ function Tweet(props) {
           userName={info.userName}
           time={info.created_at}
         />
+        <Text text={info.text} />
       </div>
     </div>
   );
